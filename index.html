@@ -22,8 +22,10 @@ body { font-family: sans-serif; }
 #resultado { text-align: center; }
 #placar { height: 60px; display: table-caption; }
 #historico > li { margin: 6px 0; list-style-type: circle; }
-#blackjack > div:not(:nth-child(2)) { border-left: 1px solid #EEE; }
-#blackjack > div:not(:last-child) { border-right: 1px solid rgba(225,225,225,0.5); }
+@media screen and (min-width: 768px) {
+    #blackjack > div:not(:nth-child(2)) { border-left: 1px solid #EEE; }
+    #blackjack > div:not(:last-child) { border-right: 1px solid rgba(225,225,225,0.5); }
+}
 .rodape,.title { text-align: center; }
 a { text-decoration: none; color: gray; }
 a:hover { text-decoration: underline; color: #667; }
