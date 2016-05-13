@@ -132,7 +132,7 @@ var sorteiaCarta = function (cartas_) {
     return carta_;
 };
 var sacarCartas = function (cartas_,mao_) {
-    // if (somarCartas(mao_) >= 21) return false;
+    if (somarCartas(mao_) >= 21) return false;
     carta_ = sorteiaCarta(cartas_);
     cartas_.splice(cartas_.indexOf(carta_),1);
     mao_.push(carta_);
